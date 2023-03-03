@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+  </head>
+  <body>
+    <script>
+      const url = window.location.href.replace(/\/$/, '');
+      const redirectUrl = url + '/index.html';
+      window.location.replace(redirectUrl);
+    </script>
+  </body>
+</html>

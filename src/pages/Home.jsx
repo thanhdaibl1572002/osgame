@@ -6,7 +6,6 @@ import { toast } from 'react-toastify';
 import Button from '../components/Button'
 
 import { HiOutlineDownload } from 'react-icons/hi'
-import { RiSpaceShipFill } from 'react-icons/ri'
 
 import HomeBG from '../assets/images/home-background.png'
 
@@ -28,6 +27,9 @@ const ContentHomeText = styled.div`
     flex-direction: column;
     z-index: 10;
     h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 150px;
         font-weight: 900;
         font-family: 'Orbitron';
@@ -51,7 +53,13 @@ const ContentHomeText = styled.div`
             font-size: 90px;
         }
         @media (max-width: 500px) {
-            font-size: 75px;
+            flex-wrap: wrap;
+            div {
+                flex-basis: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 150px;
+            }
         }
     }
     h2 {
@@ -64,40 +72,14 @@ const ContentHomeText = styled.div`
         font-size: 20px;
         font-weight: 300;
         color: white;
-    }
-    @media (max-width: 700px) {
-        row-gap: 30px;
+        @media (max-width: 400px) {
+            font-size: 15px;
+        }
     }
     `
 const ContentHomeButton = styled.div`
     margin-top: 20px;
     z-index: 2;
-    `
-const SpaceShipTop = styled.div`
-    font-size: 300px;
-    color: #ffffff59;
-    z-index: 1;
-    position: absolute;
-    transform: rotate(-45deg);
-    left: 0;
-    top: 0;
-    @media (max-width: 700px) {
-        font-size: 150px;
-        top: 50px;
-    }
-    `
-const SpaceShipBottom = styled.div`
-    font-size: 300px;
-    color: #ffffff59;
-    z-index: 1;
-    position: absolute;
-    transform: rotate(45deg);
-    right: 0;
-    bottom: 0;
-    @media (max-width: 700px) {
-        font-size: 150px;
-        bottom: 50px;
-    }
     `
 
 const Notify = () => {
@@ -117,19 +99,13 @@ const Home = () => {
   return (
     <ContentHome>
         <ContentHomeText>
-            <h1><span>O</span><span>S</span>GAME</h1>
+            <h1><div><span>O</span><span>S</span></div>GAME</h1>
             <h3>Game Bắn Súng Dành Cho Nền Tảng</h3>
             <h2>LINUX</h2>
         </ContentHomeText>
         <ContentHomeButton>
             <Button color="GRADIENT" icon={<HiOutlineDownload />} text="TẢI XUỐNG" title="Nhấn vào để tải game" onClick={Notify}/>
         </ContentHomeButton>
-        <SpaceShipTop>
-            <RiSpaceShipFill />
-        </SpaceShipTop>
-        <SpaceShipBottom>
-            <RiSpaceShipFill />
-        </SpaceShipBottom>
     </ContentHome>
   )
 }

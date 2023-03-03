@@ -16,11 +16,12 @@ const App = () => {
      <div className="layout-container">
         <Header />
         <Routes>
-          <Route path='/home' element={<Home/>} />
-          <Route path='/install' element={<Install/>} />
-          <Route path='/team' element={<Team/>} />
-          <Route path='/contact' element={<Contact/>} />
+          <Route path='/osgame/home' element={<Home/>} />
+          <Route path='/osgame/install' element={<Install/>} />
+          <Route path='/osgame/team' element={<Team/>} />
+          <Route path='/osgame/contact' element={<Contact/>} />
           <Route path='/' element={<Home/>} />
+          <Route path='/osgame' element={<Home/>} />
         </Routes>
         <Footer />
       </div>

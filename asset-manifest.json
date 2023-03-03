@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/osgame/static/css/main.ae3cee86.css",
-    "main.js": "/osgame/static/js/main.5c2141c5.js",
+    "main.js": "/osgame/static/js/main.b702a5f9.js",
     "static/media/home-background.png": "/osgame/static/media/home-background.3f3b36e9068ccdf512df.png",
     "static/media/logo.png": "/osgame/static/media/logo.bfa3be0d9877167bd512.png",
     "index.html": "/osgame/index.html",
     "main.ae3cee86.css.map": "/osgame/static/css/main.ae3cee86.css.map",
-    "main.5c2141c5.js.map": "/osgame/static/js/main.5c2141c5.js.map"
+    "main.b702a5f9.js.map": "/osgame/static/js/main.b702a5f9.js.map"
   },
   "entrypoints": [
     "static/css/main.ae3cee86.css",
-    "static/js/main.5c2141c5.js"
+    "static/js/main.b702a5f9.js"
   ]
 }

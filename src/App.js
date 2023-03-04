@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='/osgame'>
      <div className="layout-container">
         <Header />
         <Routes>
@@ -20,7 +20,7 @@ const App = () => {
           <Route path='/install' element={<Install/>} />
           <Route path='/team' element={<Team/>} />
           <Route path='/contact' element={<Contact/>} />
-          <Route path='/' element={<Home/>} />
+          <Route path='/*' element={<Home/>} />
         </Routes>
         <Footer />
       </div>

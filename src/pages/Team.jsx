@@ -49,7 +49,7 @@ const ContentTeamTitle = styled.div`
   }
   @media (max-width: 1100px) {
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 `
 

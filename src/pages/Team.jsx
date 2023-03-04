@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Helmet } from 'react-helmet';
 
 import FriendCard from '../components/FriendCard'
 
@@ -130,6 +131,9 @@ const teamInfomaton = [
 const Team = () => {
   return (
     <ContentTeam>
+      <Helmet>
+        <title>OS Game - Nhóm</title>
+      </Helmet>
       <ContentTeamTitle>
         <h1><span>O</span><span>S</span> TEAM</h1>
       </ContentTeamTitle>

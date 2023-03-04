@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 
 const Install = () => {
   return (
-    <div>Install</div>
+    <div>
+      <Helmet>
+        <title>OS Game - Cài Đặt</title>
+      </Helmet>
+    </div>
   )
 }
 

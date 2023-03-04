@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Helmet } from 'react-helmet';
 
 import { toast } from 'react-toastify';
 
@@ -99,6 +100,9 @@ const Notify = () => {
 const Home = () => {
   return (
     <ContentHome>
+        <Helmet>
+            <title>OS Game - Trang Chủ</title>
+        </Helmet>
         <ContentHomeText>
             <h1><div><span>O</span><span>S</span></div>GAME</h1>
             <h3>Game Bắn Súng Dành Cho Nền Tảng</h3>

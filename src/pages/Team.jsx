@@ -16,6 +16,7 @@ const ContentTeam = styled.div`
   background-image: url(${TeamBG});
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   @media (max-width: 1100px) {
     height: max-content;

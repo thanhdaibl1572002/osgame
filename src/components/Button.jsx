@@ -6,7 +6,7 @@ const BUTTON_COLORS = {
   WHITE: { backgroundColor: '#FFFFFF', color: '#000000' },
   GREEN: { backgroundColor: '#2BC784', color: '#FFFFFF' },
   ORANGE: { backgroundColor: '#fb6340', color: '#FFFFFF' },
-  BLUE: { backgroundColor: 'rgba(82,161,255,1)', color: '#FFFFFF' },
+  BLUE: { backgroundColor: 'linear-gradient(159deg, rgba(34,97,195,1) 25%, rgba(0,164,255,1) 51%, rgba(0,207,255,1) 74%);', color: '#FFFFFF' },
   GRADIENT: { backgroundColor: 'linear-gradient(323deg, rgba(0,0,0,1) 25%, rgba(32,101,255,1) 100%);', color: "#FFFFFF" },
 
 }

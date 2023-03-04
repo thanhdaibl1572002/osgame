@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 
 const App = () => {
   return (
-    <Router basename="/osgame">
+    <Router>
      <div className="layout-container">
         <Header />
         <Routes>

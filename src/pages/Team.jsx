@@ -10,7 +10,8 @@ import Avatar from '../assets/images/avatar-default.png'
 
 const ContentTeam = styled.div`
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  padding: 80px 0 50px 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -19,9 +20,8 @@ const ContentTeam = styled.div`
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  @media (max-width: 1100px) {
-    height: max-content;
-    padding: 80px 0;
+  @media (max-width: 1000px) {
+    padding: 100px 0 50px 0;
   }
 `
 
@@ -29,8 +29,7 @@ const ContentTeamTitle = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: -25px;
+  margin-bottom: 35px;
   h1 {
     font-size: 50px;
     font-weight: 900;

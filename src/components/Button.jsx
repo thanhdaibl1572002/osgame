@@ -7,8 +7,8 @@ const BUTTON_COLORS = {
   GREEN: { backgroundColor: '#2BC784', color: '#FFFFFF' },
   ORANGE: { backgroundColor: '#fb6340', color: '#FFFFFF' },
   BLUE: { backgroundColor: 'linear-gradient(159deg, rgba(34,97,195,1) 25%, rgba(0,164,255,1) 51%, rgba(0,207,255,1) 74%);', color: '#FFFFFF' },
+  YELLOW: { backgroundColor: 'linear-gradient(350deg, rgba(255,205,0,1) 23%, rgba(255,118,54,1) 54%, rgba(255,0,91,1) 83%)', color: '#FFFFFF' },
   GRADIENT: { backgroundColor: 'linear-gradient(323deg, rgba(0,0,0,1) 25%, rgba(32,101,255,1) 100%);', color: "#FFFFFF" },
-
 }
 
 const Button = ({ color, icon, text, ...props }) => {

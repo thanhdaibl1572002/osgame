@@ -1,0 +1,5 @@
+<script>
+  const pathSegments = window.location.pathname.split('/').filter(segment => segment);
+  const redirectUrl = `/${pathSegments[pathSegments.length - 1]}`;
+  window.location.replace(redirectUrl);
+</script>

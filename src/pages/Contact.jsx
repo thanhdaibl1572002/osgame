@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet';
 
-import ContactBG from '../assets/images/contact-background-2.png'
+import ContactBG from '../assets/images/contact-background.png'
 
 import TextBox from '../components/TextBox';
 import TextArea from '../components/TextArea';

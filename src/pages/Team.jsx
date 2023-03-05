@@ -23,6 +23,9 @@ const ContentTeam = styled.div`
   @media (max-width: 1000px) {
     padding: 100px 0 50px 0;
   }
+  @media (max-width: 500px) {
+    padding: 80px 0 50px 0;
+  }
 `
 
 const ContentTeamTitle = styled.div`

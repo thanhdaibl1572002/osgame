@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet';
 
-import ContactBG from '../assets/images/contact-background.png'
+import ContactBG from '../assets/images/contact-background-2.png'
 
 import TextBox from '../components/TextBox';
 import TextArea from '../components/TextArea';
@@ -26,6 +26,9 @@ const ContentContact = styled.div`
   @media (max-width: 1000px) {
     padding: 100px 20px 50px 20px;
   }
+  @media (max-width: 500px) {
+    padding: 70px 20px 50px 20px;
+  }
 `
 
 const ContentContactTitle = styled.div`
@@ -40,7 +43,7 @@ const ContentContactTitle = styled.div`
     font-weight: 900;
     font-family: 'Orbitron';
     -webkit-text-stroke: 2px rgba(0,164,255,1);
-    color: transparent;
+    color: black;
     letter-spacing: 5px;
     text-align: center;
   }
@@ -53,7 +56,6 @@ const ContentContactWrapper = styled.div`
   border-radius: 10px;
   overflow: hidden;
   background: transparent;
-  border: 2px solid rgba(0,164,255,1);
   @media (max-width: 900px) {
     width: 600px;
   }
@@ -68,7 +70,7 @@ const ContentContactWrapper = styled.div`
 const ContentContactForm = styled.div`
   flex-basis: 100%;
   padding: 50px;
-  background: linear-gradient(145deg,rgb(0 171 215 / 8%) 20%,rgb(0 77 215 / 60%) 50%,rgb(0 0 0) 50%,rgb(0 4 37 / 70%) 75%);
+  background: linear-gradient(325deg,rgb(0 114 215 / 26%) 20%,rgb(0 77 215 / 43%) 50%,rgb(0 0 0 / 38%) 50%,rgb(0 4 37 / 70%) 75%);
   flex-direction: column;
   row-gap: 30px;
   @media (max-width: 900px) {
@@ -100,11 +102,11 @@ const Contact = () => {
           <ContentContactTitle>
             <h1>CONTACT</h1>
           </ContentContactTitle>
-          <TextBox enable={true} readOnly={false} type="text" icon={<IoPersonCircleOutline/>} placeholder="Nhập họ tên của bạn"/>
-          <TextBox enable={true} readOnly={false} type="text" icon={<IoAtCircleOutline/>} placeholder="Nhập email của bạn"/>
-          <TextArea enable={true} readOnly={false} type="text" icon={<IoHelpCircleOutline/>} resize="none" placeholder="Nhập thông tin cần được hỗ trợ..."/>
+          <TextBox enable={true} readOnly={false} type="text" icon={<IoPersonCircleOutline />} placeholder="Nhập họ tên của bạn" />
+          <TextBox enable={true} readOnly={false} type="text" icon={<IoAtCircleOutline />} placeholder="Nhập email của bạn" />
+          <TextArea enable={true} readOnly={false} type="text" icon={<IoHelpCircleOutline />} resize="none" placeholder="Nhập thông tin cần được hỗ trợ..." />
           <ContentContactButton>
-            <Button color="BLUE" icon={<IoArrowRedoOutline />} text="Gửi Thông Tin Liên Hệ"/>
+            <Button color="BLUE" icon={<IoArrowRedoOutline />} text="Gửi Thông Tin Liên Hệ" />
           </ContentContactButton>
         </ContentContactForm>
       </ContentContactWrapper>

@@ -34,6 +34,7 @@ const ContentInstallItemWrapper = styled.div`
   background: linear-gradient(225deg,rgb(5 0 215 / 34%) 20%,rgb(0 77 215 / 60%) 50%,rgb(0 0 0) 50%,rgb(0 4 37 / 70%) 75%);
   @media (max-width: 500px) {
     background: linear-gradient(140deg,rgb(5 0 215 / 34%) 20%,rgb(0 77 215 / 60%) 50%,rgb(0 0 0) 50%,rgb(0 4 37 / 70%) 75%);
+    padding: 30px 15px;
   }
 `
 const ContentInstallItem = styled.div`

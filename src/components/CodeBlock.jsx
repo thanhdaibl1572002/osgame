@@ -17,6 +17,10 @@ const CodeBlockContainer = styled.div`
     background-color: #0000008f !important;
     border-radius: 3px!important;
     border: 1px solid rgba(0,164,255,1) !important;
+    @media (max-width: 500px) {
+      padding: 10px!important;
+      font-size: 13.5px!important;
+    }
   }
 `;
 

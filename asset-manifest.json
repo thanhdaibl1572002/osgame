@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/osgame/static/css/main.ae3cee86.css",
-    "main.js": "/osgame/static/js/main.8b5710a9.js",
+    "main.js": "/osgame/static/js/main.886aa413.js",
     "static/media/install-background.png": "/osgame/static/media/install-background.11e48bf6422c4e300ca7.png",
     "static/media/team-background.png": "/osgame/static/media/team-background.4c3a45348ba42f34396f.png",
     "static/media/home-background.png": "/osgame/static/media/home-background.3f3b36e9068ccdf512df.png",
@@ -10,10 +10,10 @@
     "static/media/logo.png": "/osgame/static/media/logo.bfa3be0d9877167bd512.png",
     "index.html": "/osgame/index.html",
     "main.ae3cee86.css.map": "/osgame/static/css/main.ae3cee86.css.map",
-    "main.8b5710a9.js.map": "/osgame/static/js/main.8b5710a9.js.map"
+    "main.886aa413.js.map": "/osgame/static/js/main.886aa413.js.map"
   },
   "entrypoints": [
     "static/css/main.ae3cee86.css",
-    "static/js/main.8b5710a9.js"
+    "static/js/main.886aa413.js"
   ]
 }

@@ -205,18 +205,18 @@ const ToastContainerWrapper = styled.div`
   position: fixed;
 `
 
-const Notify = () => {
-  toast.warn('Game đang trong quá trình phát triển, vui lòng thử lại sau!', {
-    position: "top-center",
-    autoClose: 5000,
-    hideProgressBar: false,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-    theme: "light",
-  });
-}
+// const Notify = () => {
+//   toast.warn('Game đang trong quá trình phát triển, vui lòng thử lại sau!', {
+//     position: "top-center",
+//     autoClose: 5000,
+//     hideProgressBar: false,
+//     closeOnClick: true,
+//     pauseOnHover: true,
+//     draggable: true,
+//     progress: undefined,
+//     theme: "light",
+//   });
+// }
 
 const Header = ({ ...props }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -248,6 +248,8 @@ const Header = ({ ...props }) => {
       setIsScrolled(false);
     }
   };
+
+  const handleClick = () => window.open("https://github.com/thanhdaibl1572002/osgame-python", "_blank");
 
   return (
     <HeaderWrapper {...props} className={isScrolled ? "active" : ""}>
@@ -290,7 +292,7 @@ const Header = ({ ...props }) => {
           </HeaderIcons>
         </HeaderMenuAndIconsResponsive>
         <HeaderButtons>
-        <Button color="BLUE" icon={<HiOutlineCode />} text="SOURCE CODE" title="Nhấn vào đây để tải source code" onClick={Notify}/>
+        <Button color="BLUE" icon={<HiOutlineCode />} text="SOURCE CODE" title="Nhấn vào đây để xem source code" onClick={handleClick}/>
         <Button color="BLUE" icon={<RiBarChartHorizontalLine />} onClick={() => setIsMenuOpen(!isMenuOpen)}/> 
       </HeaderButtons>
       <ToastContainerWrapper>

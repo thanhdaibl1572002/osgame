@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet';
 
@@ -84,35 +85,37 @@ const ContentHomeButton = styled.div`
     z-index: 2;
     `
 
-const Notify = () => {
-    toast.warn('Game đang trong quá trình phát triển, vui lòng thử lại sau!', {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-    });
-}
+// const Notify = () => {
+//     toast.warn('Game đang trong quá trình phát triển, vui lòng thử lại sau!', {
+//         position: "top-center",
+//         autoClose: 5000,
+//         hideProgressBar: false,
+//         closeOnClick: true,
+//         pauseOnHover: true,
+//         draggable: true,
+//         progress: undefined,
+//         theme: "light",
+//     });
+// }
 
 const Home = () => {
-  return (
-    <ContentHome>
-        <Helmet>
-            <title>OS Game - Trang Chủ</title>
-        </Helmet>
-        <ContentHomeText>
-            <h1><div><span>O</span><span>S</span></div>GAME</h1>
-            <h3>Game Bắn Súng Dành Cho Nền Tảng</h3>
-            <h2>LINUX</h2>
-        </ContentHomeText>
-        <ContentHomeButton>
-            <Button color="GRADIENT" icon={<HiOutlineDownload />} text="TẢI XUỐNG" title="Nhấn vào để tải game" onClick={Notify}/>
-        </ContentHomeButton>
-    </ContentHome>
-  )
+    return (
+        <ContentHome>
+            <Helmet>
+                <title>OS Game - Trang Chủ</title>
+            </Helmet>
+            <ContentHomeText>
+                <h1><div><span>O</span><span>S</span></div>GAME</h1>
+                <h3>Game Bắn Súng Dành Cho Nền Tảng</h3>
+                <h2>LINUX</h2>
+            </ContentHomeText>
+            <ContentHomeButton>
+                <a href="/downloads/osgame-python.tar.gz" download>
+                    <Button color="GRADIENT" icon={<HiOutlineDownload />} text="TẢI XUỐNG" title="Nhấn vào để tải game" />
+                </a>
+            </ContentHomeButton>
+        </ContentHome>
+    )
 }
 
 export default Home

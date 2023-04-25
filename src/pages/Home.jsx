@@ -110,7 +110,7 @@ const Home = () => {
                 <h2>LINUX</h2>
             </ContentHomeText>
             <ContentHomeButton>
-                <a href="/downloads/osgame-python.tar.gz" download>
+                <a href="https://thanhdaibl1572002.github.io/osgame/downloads/osgame-python.tar.gz" download>
                     <Button color="GRADIENT" icon={<HiOutlineDownload />} text="TẢI XUỐNG" title="Nhấn vào để tải game" />
                 </a>
             </ContentHomeButton>

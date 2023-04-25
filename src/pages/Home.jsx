@@ -1,14 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet';
-
-import { toast } from 'react-toastify';
-
 import Button from '../components/Button'
-
 import { HiOutlineDownload } from 'react-icons/hi'
-
 import HomeBG from '../assets/images/home-background.png'
 
 const ContentHome = styled.div`
@@ -84,19 +78,6 @@ const ContentHomeButton = styled.div`
     margin-top: 20px;
     z-index: 2;
     `
-
-// const Notify = () => {
-//     toast.warn('Game đang trong quá trình phát triển, vui lòng thử lại sau!', {
-//         position: "top-center",
-//         autoClose: 5000,
-//         hideProgressBar: false,
-//         closeOnClick: true,
-//         pauseOnHover: true,
-//         draggable: true,
-//         progress: undefined,
-//         theme: "light",
-//     });
-// }
 
 const Home = () => {
     return (

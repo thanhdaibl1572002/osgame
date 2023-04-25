@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { Link } from 'react-router-dom';
@@ -201,22 +200,6 @@ const HeaderButtons = styled.div`
       gap: 10px;
     }
     `
-const ToastContainerWrapper = styled.div`
-  position: fixed;
-`
-
-// const Notify = () => {
-//   toast.warn('Game đang trong quá trình phát triển, vui lòng thử lại sau!', {
-//     position: "top-center",
-//     autoClose: 5000,
-//     hideProgressBar: false,
-//     closeOnClick: true,
-//     pauseOnHover: true,
-//     draggable: true,
-//     progress: undefined,
-//     theme: "light",
-//   });
-// }
 
 const Header = ({ ...props }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -295,9 +278,6 @@ const Header = ({ ...props }) => {
         <Button color="BLUE" icon={<HiOutlineCode />} text="SOURCE CODE" title="Nhấn vào đây để xem source code" onClick={handleClick}/>
         <Button color="BLUE" icon={<RiBarChartHorizontalLine />} onClick={() => setIsMenuOpen(!isMenuOpen)}/> 
       </HeaderButtons>
-      <ToastContainerWrapper>
-        <ToastContainer/>
-      </ToastContainerWrapper>
     </HeaderWrapper>
   )
 }

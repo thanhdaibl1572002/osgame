@@ -52,7 +52,7 @@ const InstallItem = ({ title, subtitle, subitems }) => {
         </InstallSubTitle>
       )}
       {subitems && subitems.map((item, index) => (
-        <InstallSubItem key={index} h3={item.h3} p={item.p} code={item.code} />
+        <InstallSubItem key={index} h3={item.h3} p={item.p} link={item.link} code={item.code} />
       ))}
     </InstallItemWrapper>
   )

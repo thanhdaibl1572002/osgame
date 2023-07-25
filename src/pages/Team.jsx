@@ -95,7 +95,7 @@ const ContentTeamItemsWrapper = styled.div`
   }
 `
 
-const teamInfomaton = [
+const teamInfomations = [
   {
     id: 1,
     name: 'Trương Thành Đại',
@@ -140,7 +140,7 @@ const Team = () => {
         <h1><span>O</span><span>S</span> TEAM</h1>
       </ContentTeamTitle>
       <ContentTeamItemsWrapper>
-        {teamInfomaton.map(item => (
+        {teamInfomations.map(item => (
           <FriendCard 
             key={item.id} 
             id={item.id} 
@@ -152,7 +152,6 @@ const Team = () => {
           />
         ))}
       </ContentTeamItemsWrapper>
-
     </ContentTeam>
   )
 }

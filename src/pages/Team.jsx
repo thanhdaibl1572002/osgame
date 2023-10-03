@@ -121,7 +121,7 @@ const teamInfomations = [
     avatar: Avatar,
   },
   {
-    id: 5,
+    id: 4,
     name: 'Trần Thiện Phúc',
     position: 'UX/UI Designer',
     facebook: '',
